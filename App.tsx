@@ -77,7 +77,7 @@ const App: React.FC = () => {
         <div className="flex justify-between items-start">
           <div className="space-y-0.5">
             <h1 className="text-xl font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
-              Time Machine <Sparkles size={16} className="text-indigo-500 fill-indigo-500" />
+              Time Machine <Sparkles size={16} className="text-violet-500 fill-violet-500" />
             </h1>
             <p className="text-[13px] text-slate-500 font-semibold italic">
               {getGreeting()}
@@ -87,7 +87,7 @@ const App: React.FC = () => {
             <span className="text-[11px] font-bold text-slate-400 uppercase tracking-widest leading-none mb-1">
               {new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
             </span>
-            <span className="text-[10px] font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full">
+            <span className="text-[10px] font-bold text-violet-600 bg-violet-50 px-2 py-0.5 rounded-full">
               {new Date().toLocaleDateString('en-US', { weekday: 'long' })}
             </span>
           </div>
@@ -151,9 +151,9 @@ interface NavButtonProps {
 const NavButton: React.FC<NavButtonProps> = ({ active, onClick, icon, label }) => (
   <button 
     onClick={onClick}
-    className={`flex flex-col items-center gap-1.5 transition-all duration-300 relative ${active ? 'text-indigo-600 scale-105' : 'text-slate-400'}`}
+    className={`flex flex-col items-center gap-1.5 transition-all duration-300 relative ${active ? 'text-violet-600 scale-105' : 'text-slate-400'}`}
   >
-    <div className={`p-2.5 rounded-2xl transition-all duration-300 ${active ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-200' : 'bg-transparent'}`}>
+    <div className={`p-2.5 rounded-2xl transition-all duration-300 ${active ? 'bg-violet-600 text-white shadow-lg shadow-violet-200' : 'bg-transparent'}`}>
       {icon}
     </div>
     <span className="text-[10px] font-bold tracking-tight uppercase">{label}</span>
